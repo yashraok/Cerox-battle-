@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
         body {
             font-family: Arial, sans-serif;
             color: white;
-            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+            background: linear-gradient(135deg, #1a1a1a, #000);
         }
         header {
             background: #ff2e2e;
@@ -22,6 +22,7 @@
         }
         header h1 {
             font-size: 2.5em;
+            letter-spacing: 2px;
         }
         nav {
             background: #111;
@@ -33,29 +34,30 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            transition: 0.3s;
+            margin: 0 5px;
+            transition: background 0.3s;
         }
         nav a:hover {
             background: #ff2e2e;
             border-radius: 5px;
         }
         .hero {
-            padding: 50px 20px;
             text-align: center;
-            background: url('https://images.unsplash.com/photo-1608126333875-cf6dc9ede14a') no-repeat center center/cover;
+            padding: 80px 20px;
+            background: url('https://example.com/freefire-bg.jpg') no-repeat center center/cover;
         }
         .hero h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 5px #000;
         }
         .btn {
             background: #ff2e2e;
             padding: 12px 25px;
-            color: white;
+            font-size: 1.2em;
             text-decoration: none;
+            color: white;
             border-radius: 5px;
-            font-weight: bold;
+            transition: 0.3s;
         }
         .btn:hover {
             background: #cc1b1b;
@@ -63,11 +65,6 @@
         .section {
             padding: 40px 20px;
             text-align: center;
-        }
-        #qrcode img {
-            border: 5px solid white;
-            border-radius: 10px;
-            margin-top: 20px;
         }
         footer {
             background: #111;
@@ -105,23 +102,16 @@
         <h2>Rules & Guidelines</h2>
         <ul style="max-width:600px;margin:20px auto;text-align:left;">
             <li>No hacking or cheating.</li>
-            <li>Teams must follow match schedules strictly.</li>
-            <li>Respect all players and tournament staff.</li>
+            <li>Teams must follow match schedules.</li>
+            <li>Respect all players and organizers.</li>
             <li>Provide your Free Fire UID when registering.</li>
         </ul>
     </section>
 
     <section id="register" class="section">
         <h2>Register for the Tournament</h2>
-        <p>Scan the QR code below to register instantly:</p>
-
-        <div id="qrcode">
-            <!-- Replace the link in "chl=" with your Google Form or WhatsApp group invite link -->
-            <img src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" alt="QR Code for Registration">
-        </div>
-
-        <p style="margin-top:15px;">Or click the button below:</p>
-        <a class="btn" href="https://forms.gle/your-form-link" target="_blank">Register Here</a>
+        <p>Fill the form below to join the battle.</p>
+        <a class="btn" href="https://docs.google.com/forms/d/1gV_W1mbmeJCD4UXGsG69HXALhM9TVhIFkSA5lU18SwA/edit?chromeless=1" target="_blank">Register Here</a>
     </section>
 
     <section id="contact" class="section" style="background:#1a1a1a;">
