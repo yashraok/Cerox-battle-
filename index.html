@@ -3,82 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerox Battles - Free Fire Tournaments</title>
+    <title>Cerox Battle - Free Fire Tournament</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             font-family: Arial, sans-serif;
-            background: #0d0d0d;
-            color: #fff;
-            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #1a1a1a, #000);
         }
         header {
-            padding: 30px;
-            background: linear-gradient(90deg, #ff0077, #ffcc00);
-            font-size: 28px;
-            font-weight: bold;
+            background: #ff2e2e;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
             letter-spacing: 2px;
         }
-        .hero {
-            padding: 60px 20px;
-            background: url('https://i.ibb.co/8jW6Pjc/gaming-bg.jpg') no-repeat center/cover;
+        nav {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
         }
-        .hero h1 {
-            font-size: 40px;
-            text-shadow: 2px 2px 10px #000;
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #ff2e2e;
+            border-radius: 5px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('https://example.com/freefire-bg.jpg') no-repeat center center/cover;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
         .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 30px;
-            font-size: 18px;
-            color: #fff;
-            background: linear-gradient(90deg, #ff0077, #ffcc00);
-            border: none;
-            border-radius: 30px;
+            background: #ff2e2e;
+            padding: 12px 25px;
+            font-size: 1.2em;
             text-decoration: none;
+            color: white;
+            border-radius: 5px;
             transition: 0.3s;
         }
         .btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px #ff0077;
+            background: #cc1b1b;
         }
-        section {
-            padding: 50px 20px;
+        .section {
+            padding: 40px 20px;
+            text-align: center;
         }
         footer {
-            padding: 20px;
-            background: #1a1a1a;
-            font-size: 14px;
+            background: #111;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+
     <header>
-        Cerox Battles ⚔️
+        <h1>Cerox Battle</h1>
+        <p>Free Fire Tournament</p>
     </header>
 
-    <div class="hero">
-        <h1>Join the Ultimate Free Fire Battles</h1>
-        <p>Daily tournaments, real prizes, and epic fights!</p>
-        <a href="#join" class="btn"><a href="https://docs.google.com/forms/d/1gV_W1mbmeJCD4UXGsG69HXALhM9TVhIFkSA5lU18SwA/edit?chromeless=1" target="_blank" class="btn">Join Now</a></a>
-    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#rules">Rules</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="tournaments">
-        <h2>Upcoming Tournaments</h2>
-        <p>🔥 August 20 - 8:00 PM IST - Solo Battle Royale</p>
-        <p>🔥 August 21 - 9:00 PM IST - Squad Deathmatch</p>
+    <section class="hero">
+        <h2>Join the Fight. Prove Your Skill.</h2>
+        <a class="btn" href="#register">Register Now</a>
     </section>
 
-    <section id="join">
-        <h2>How to Join?</h2>
-        <p>1️⃣ Click the "Join Now" button above</p>
-        <p>2️⃣ Fill in your Free Fire UID & details</p>
-        <p>3️⃣ Get ready to battle!</p>
+    <section id="about" class="section">
+        <h2>About Cerox Battle</h2>
+        <p>Cerox Battle is the ultimate Free Fire tournament where the best players compete for glory and prizes! Join and show your skills.</p>
     </section>
 
-    <footer>
-        © 2025 Cerox Battles | Contact: ceroxbattles@gmail.com
-    </footer>
-</body>
-</html>
+    <section id="rules" class="section" style="background:#1a1a1a;">
+        <h2>Rules & Guidelines</h2>
+        <ul style="max-width:600px;margin:20px auto;text-align:left;">
+            <li>No hacking or cheating.</li>
+            <li>Teams must follow match schedules.</li>
+            <li>Respect all players and organizers.</li>
+            <li>Provide your Free Fire UID when registering.</li>
+        </ul>
+    </section>
+
+    <section id="register" class="section">
+        <h2>Register for the Tournament</h2>
+        <p>Fill the form below to join the battle.</p>
+        <a class="btn" href="https://docs.google.com/forms/d/1gV_W1mbmeJCD4UXGsG69HXALhM9TVhIFkSA5lU18SwA/edit?chromeless=1" target="_blank">Register Here</a>
+    </section>
+
+    <section id="contact" class="section" style="background:#1a1a1a;">
+        <h2>Contact Us</h2>
+        <p>Email: ceroxbattle@gmail.com</p>
+        <p>Instagram: @
+            
